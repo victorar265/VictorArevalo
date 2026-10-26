@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sobre mí | Víctor Elías Arévalo Cancinos</title>
-  <meta name="description" content="Quién es Víctor Elías Arévalo Cancinos: formación, experiencia en Tecno Móvil y lo que valora.">
+  <meta name="description" content="Quién es Víctor Elías Arévalo Cancinos: formación, experiencia en Tecno Móvil e idiomas.">
   <meta name="theme-color" content="#060A13">
   <meta property="og:title" content="Sobre mí | Víctor Elías Arévalo Cancinos">
-  <meta property="og:description" content="Quién es Víctor Elías Arévalo Cancinos: formación, experiencia en Tecno Móvil y lo que valora.">
+  <meta property="og:description" content="Quién es Víctor Elías Arévalo Cancinos: formación, experiencia en Tecno Móvil e idiomas.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233D7BFF'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2304101f'%3EVA%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.className+=' js';</script>
+  <style>
+.timeline ul{margin:.6rem 0 0;padding-left:1.1rem;color:var(--muted)}
+.timeline ul li{padding:0 0 .35rem;margin:0}
+.timeline ul li::before{display:none}
+.timeline .role{color:var(--text);margin:0 0 .2rem}
+.langs{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:1.2rem}
+.lang{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:1.6rem}
+.lang strong{display:block;font-family:var(--f-display);font-size:1.9rem;font-weight:650;margin-bottom:.2rem}
+.lang span{color:var(--sky);font-size:1.1rem;font-weight:600}
+@media (max-width:600px){.langs{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -58,11 +69,41 @@
       <div class="wrap">
         <h2 class="reveal">Formación y experiencia</h2>
         <ol class="timeline reveal">
-          <li><span class="when">2026</span><h3>Bachiller en Ciencias y Letras</h3><p>Colegio Capouilliez, Guatemala.</p></li>
-          <li><span class="when">Octubre a noviembre de 2024</span><h3>Vacacionista en Tecno Móvil</h3><p>Apoyé en diseño 3D e impresión 3D.</p></li>
-          <li><span class="when">Octubre a noviembre de 2023</span><h3>Vacacionista en Tecno Móvil</h3><p>Trabajé con placas electrónicas y armado de kits.</p></li>
+          <li>
+            <span class="when">Octubre a noviembre de 2024</span>
+            <h3>Trabajador vacacionista en Tecno Móvil</h3>
+            <p class="role">Diseño e impresión 3D</p>
+            <ul>
+              <li>Diseño y modelado de piezas tridimensionales en Fusion 360.</li>
+              <li>Preparación de modelos en Bambu Studio y ejecución de impresiones 3D para producir piezas y materiales necesarios para el trabajo.</li>
+              <li>Cuidado y mantenimiento de impresoras 3D para apoyar su funcionamiento adecuado.</li>
+            </ul>
+          </li>
+          <li>
+            <span class="when">Octubre a noviembre de 2023</span>
+            <h3>Trabajador vacacionista en Tecno Móvil</h3>
+            <p class="role">Preparación de placas electrónicas y kits</p>
+            <ul>
+              <li>Colocación y preparación de componentes LED en placas electrónicas para su posterior soldadura.</li>
+              <li>Armado y preparación de kits de trabajo para los colaboradores y kits de inventario.</li>
+            </ul>
+          </li>
+          <li>
+            <span class="when">2026</span>
+            <h3>Bachiller en Ciencias y Letras</h3>
+            <p>Colegio Capouilliez, Guatemala.</p>
+          </li>
         </ol>
-        <p class="muted reveal">Idiomas: español nativo e inglés intermedio.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2 class="reveal">Idiomas</h2>
+        <div class="langs reveal">
+          <div class="lang"><strong>Español</strong><span>Nativo</span></div>
+          <div class="lang"><strong>Inglés</strong><span>Intermedio</span></div>
+        </div>
       </div>
     </section>
   </main>
