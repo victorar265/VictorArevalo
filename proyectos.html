@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Proyectos | Víctor Elías Arévalo Cancinos</title>
-  <meta name="description" content="Proyectos: robot asistente Pochi, banda transportadora automatizada, SafePass y página web de SERIMA.">
+  <meta name="description" content="Proyectos: robot asistente Pochi, banda transportadora con llenado automático, conteo de personas, purificador de aire y cinturón asistencial.">
   <meta name="theme-color" content="#060A13">
   <meta property="og:title" content="Proyectos | Víctor Elías Arévalo Cancinos">
-  <meta property="og:description" content="Proyectos: robot asistente Pochi, banda transportadora automatizada, SafePass y página web de SERIMA.">
+  <meta property="og:description" content="Proyectos: robot asistente Pochi, banda transportadora con llenado automático, conteo de personas, purificador de aire y cinturón asistencial.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233D7BFF'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2304101f'%3EVA%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.className+=' js';</script>
+  <style>
+.small-projects{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.logro{margin:1rem 0 0;padding:.6rem .9rem;border-left:3px solid var(--sky);background:rgba(92,200,255,.08);border-radius:0 8px 8px 0;color:#CFE9FA;font-size:.97rem}
+.card .body{padding:1.5rem}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -69,13 +74,13 @@
         <!-- BANDA TRANSPORTADORA -->
         <article class="project flip reveal" id="banda">
           <div>
-            <h2>Banda transportadora automatizada</h2>
-            <p>Proyecto de automatización de una banda transportadora. En el video se ve cómo funciona el prototipo.</p>
-            <!-- Para ampliar: agrega aquí componentes, materiales y qué hiciste tú. -->
+            <h2>Banda transportadora con llenado automático de vasos</h2>
+            <p>Sistema automatizado que transporta vasos mediante una banda y dispensa agua para rellenarlos. Integra mecanismos y control electrónico para realizar una secuencia de acciones con menor intervención manual.</p>
+            <p class="logro">Primer lugar en Proyecto Científico, nivel básico, ERA 2024, en agosto de 2024.</p>
           </div>
           <div class="media">
             <div class="video-box">
-          <video controls playsinline preload="metadata" aria-label="Video de demostración de la banda transportadora automatizada">
+          <video controls playsinline preload="metadata" aria-label="Video de demostración de la banda transportadora con llenado automático de vasos">
             <source src="recursos/bandat.mp4#t=0.1" type="video/mp4">
             Tu navegador no puede reproducir este video.
           </video>
@@ -84,27 +89,27 @@
           </div>
         </article>
 
+        <!-- OTROS PROYECTOS (solo descripción; para agregar imagen o video, inserta un bloque antes de .body) -->
         <div class="small-projects">
-          <!-- SAFEPASS -->
-          <article class="card reveal" id="safepass">
-            <!-- Para reemplazar el espacio visual: <img src="recursos/NOMBRE.jpg" alt="Descripción"> -->
-            <div class="placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><span>Imagen del proyecto próximamente</span></div>
+          <article class="card reveal" id="conteo">
             <div class="body">
-              <h3>SafePass</h3>
-              <p>Sistema de control de acceso y aforo con Arduino para una atracción del IRTRA Petapa. Trabajo individual de la evaluación final de Tecnología Aplicada, presentado en video.</p>
-              <ul class="chips"><li>Arduino Uno</li><li>Sensor ultrasónico</li><li>Pantalla LCD I2C</li><li>LED y buzzer</li></ul>
+              <h3>Sistema de conteo de personas</h3>
+              <p>Proyecto electrónico diseñado para contar las personas que entran y salen de un lugar mediante sensores ultrasónicos. Busca llevar un registro del movimiento de personas de manera automatizada, aplicando programación y sensores para detectar el paso de los usuarios.</p>
+              <p class="logro">Segundo lugar en Expo Ciencia, categoría B.</p>
             </div>
           </article>
 
-          <!-- SERIMA -->
-          <article class="card reveal" id="serima">
-            <!-- Para reemplazar el espacio visual: <img src="recursos/NOMBRE.jpg" alt="Descripción"> -->
-            <div class="placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><span>Imagen del proyecto próximamente</span></div>
+          <article class="card reveal" id="purificador">
             <div class="body">
-              <h3>Página web de SERIMA</h3>
-              <p>Landing page informativa para SERIMA, empresa de construcción civil y vial, que presenta la empresa y sus proyectos realizados.</p>
-              <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul>
-              <a href="https://victorarevalo265.github.io/serima-website/" target="_blank" rel="noopener">Ver el sitio publicado</a>
+              <h3>Purificador de aire experimental</h3>
+              <p>Prototipo experimental que combina una esponja, materiales biodegradables y sensores para observar las condiciones de la calidad del aire. El proyecto explora cómo integrar materiales y electrónica en una propuesta orientada al monitoreo y tratamiento experimental del aire.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" id="cinturon">
+            <div class="body">
+              <h3>Cinturón asistencial para personas con discapacidad visual</h3>
+              <p>Dispositivo portátil desarrollado para detectar obstáculos cercanos o lejanos mediante sensores ultrasónicos y proporcionar información adicional al usuario sobre su entorno. Su propósito es explorar una alternativa tecnológica que complemente la percepción del espacio y apoye la movilidad de personas con discapacidad visual.</p>
             </div>
           </article>
         </div>
