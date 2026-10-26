@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos | Víctor Elías Arévalo Cancinos</title>
+  <meta name="description" content="Proyectos: robot asistente Pochi, banda transportadora automatizada, SafePass y página web de SERIMA.">
+  <meta name="theme-color" content="#060A13">
+  <meta property="og:title" content="Proyectos | Víctor Elías Arévalo Cancinos">
+  <meta property="og:description" content="Proyectos: robot asistente Pochi, banda transportadora automatizada, SafePass y página web de SERIMA.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233D7BFF'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2304101f'%3EVA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.className+=' js';</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="Ir al inicio"><span class="brand-mark">VA</span><span>Víctor Arévalo</span></a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">&#9776;</button>
+      <nav class="nav" id="menu" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="proyectos.html" aria-current="page">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Proyectos</h1>
+        <p>Trabajos en los que he participado, con lo que cada uno hace y cómo lo desarrollé.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:1.5rem">
+      <div class="wrap">
+
+        <!-- PROYECTO DESTACADO: POCHI -->
+        <article class="featured reveal" id="pochi">
+          <div class="project" style="padding-top:0;border-top:0">
+            <div>
+              <p class="kicker">Proyecto destacado</p>
+              <h2>Pochi, robot asistente de medicamentos</h2>
+              <p>Pochi es un asistente de salud con inteligencia artificial pensado para ayudar a personas mayores a recordar y administrar sus medicamentos. Se integra con una base de datos que guarda los horarios de cada tratamiento, e incluye recordatorios, interacción por voz, entrega de medicamentos y rastreo.</p>
+              <p class="meta">Tesis grupal de la Promoción XL, Colegio Capouilliez. Equipo de siete integrantes.</p>
+              <p class="meta">Título completo: Sistema asistencial robótico autónomo con Inteligencia Artificial Integrada para la automatización, adherencia y gestión segura de tratamientos farmacológicos en pacientes vulnerables.</p>
+              <ul class="acro" aria-label="Significado de POCHI">
+                <li><b>P</b> Paciente</li><li><b>O</b> Orientado</li><li><b>C</b> Cuidado</li><li><b>H</b> Salud</li><li><b>I</b> Inteligencia</li>
+              </ul>
+            </div>
+            <div class="media">
+              <div class="video-box">
+          <video controls playsinline preload="metadata" aria-label="Video de demostración del robot asistencial Pochi">
+            <source src="recursos/vpochi.mp4#t=0.1" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <div class="video-missing">El video de demostración todavía no está disponible.</div>
+        </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BANDA TRANSPORTADORA -->
+        <article class="project flip reveal" id="banda">
+          <div>
+            <h2>Banda transportadora automatizada</h2>
+            <p>Proyecto de automatización de una banda transportadora. En el video se ve cómo funciona el prototipo.</p>
+            <!-- Para ampliar: agrega aquí componentes, materiales y qué hiciste tú. -->
+          </div>
+          <div class="media">
+            <div class="video-box">
+          <video controls playsinline preload="metadata" aria-label="Video de demostración de la banda transportadora automatizada">
+            <source src="recursos/bandat.mp4#t=0.1" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <div class="video-missing">El video de demostración todavía no está disponible.</div>
+        </div>
+          </div>
+        </article>
+
+        <div class="small-projects">
+          <!-- SAFEPASS -->
+          <article class="card reveal" id="safepass">
+            <!-- Para reemplazar el espacio visual: <img src="recursos/NOMBRE.jpg" alt="Descripción"> -->
+            <div class="placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><span>Imagen del proyecto próximamente</span></div>
+            <div class="body">
+              <h3>SafePass</h3>
+              <p>Sistema de control de acceso y aforo con Arduino para una atracción del IRTRA Petapa. Trabajo individual de la evaluación final de Tecnología Aplicada, presentado en video.</p>
+              <ul class="chips"><li>Arduino Uno</li><li>Sensor ultrasónico</li><li>Pantalla LCD I2C</li><li>LED y buzzer</li></ul>
+            </div>
+          </article>
+
+          <!-- SERIMA -->
+          <article class="card reveal" id="serima">
+            <!-- Para reemplazar el espacio visual: <img src="recursos/NOMBRE.jpg" alt="Descripción"> -->
+            <div class="placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><span>Imagen del proyecto próximamente</span></div>
+            <div class="body">
+              <h3>Página web de SERIMA</h3>
+              <p>Landing page informativa para SERIMA, empresa de construcción civil y vial, que presenta la empresa y sus proyectos realizados.</p>
+              <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul>
+              <a href="https://victorarevalo265.github.io/serima-website/" target="_blank" rel="noopener">Ver el sitio publicado</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <span>&copy; 2026 Víctor Elías Arévalo Cancinos. Guatemala.</span>
+      <a href="mailto:victorearevalo00@gmail.com">victorearevalo00@gmail.com</a>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
